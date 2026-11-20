@@ -1,0 +1,444 @@
+<DOCTYPE>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title> آفاق </title>
+
+    <link rel="stylesheet" href="css/math.css">
+    <link rel="stylesheet" href="css/all.css">
+
+       <link rel="icon" href="images/icon.png">
+        </head>
+     <body>
+          <div class="first-header">
+        <h2 class="header-logo">آفاق</h2>
+
+        <ul class="ul12">
+           <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="home.html">عن التوحد</a></li>
+             <li><a href="math.html">الرياضيات</a></li>
+            <li><a href="help.html">طرق المساعدة</a></li>
+            <li><a href="heroes.html">ابطال التوحد </a></li>
+        </ul>
+    </div>
+
+   <div class="math">
+
+    <div class="title">
+        <h1>رحلة الرياضيات </h1>
+        <p>هيا نتعلم ونلعب معًا</p>
+    </div>
+
+
+
+    <div class="container" id="page1">
+
+        <div class="box">
+
+            <div class="pic">🔢</div>
+
+            <h2>المستوى الأول</h2>
+            <p>الأرقام</p>
+
+            <button onclick="open1()">ابدأ</button>
+
+        </div>
+
+
+        <div class="box1">
+
+            <div class="pic">🐟</div>
+
+            <h2>المستوى الثاني</h2>
+            <p>الجمع</p>
+
+            <button id="b1" onclick="open2()" disabled>
+                🔒 مغلق
+            </button>
+
+        </div>
+
+
+        <div class="box2">
+
+            <div class="pic">🎈</div>
+
+            <h2>المستوى الثالث</h2>
+            <p>الطرح</p>
+
+            <button id="b2" onclick="open3()" disabled>
+                🔒 مغلق
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="page" id="page2">
+
+        <button class="back" onclick="back()"> رجوع</button>
+
+        <div class="container1">
+
+            <h1>🔢 الأرقام</h1>
+
+            <div class="small">
+
+                <h2>الدرس الأول</h2>
+
+                <p>هيا نتعرف على الأرقام من 1 إلى 5.</p>
+
+                <div class="big">
+                    1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣
+                </div>
+
+                <button onclick="one()">ابدأ</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="page" id="page3">
+
+        <button class="back" onclick="back()">← رجوع</button>
+
+        <div class="container1">
+
+            <h1>الدرس الأول 🔢</h1>
+
+            <p>هذا هو الرقم 3</p>
+
+            <div class="big">3️⃣</div>
+
+            <h2>أين الرقم 3؟</h2>
+
+            <div class="buttons">
+
+                <button onclick="check1(1)">1</button>
+                <button onclick="check1(3)">3</button>
+                <button onclick="check1(5)">5</button>
+
+            </div>
+
+            <p id="text1"></p>
+
+            <button id="next1" onclick="two()" style="display:none;">
+                الدرس التالي
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="page" id="page4">
+
+        <button class="back" onclick="back()"> رجوع</button>
+
+        <div class="container1">
+
+            <h1>الدرس الثاني 🔢</h1>
+
+            <p>هيا نتعرف على الأرقام من 6 إلى 10.</p>
+
+            <div class="big">
+                6️⃣ 7️⃣ 8️⃣ 9️⃣ 🔟
+            </div>
+
+            <h2>أين الرقم 8؟</h2>
+
+            <div class="buttons">
+
+                <button onclick="check2(6)">6</button>
+                <button onclick="check2(8)">8</button>
+                <button onclick="check2(10)">10</button>
+
+            </div>
+
+            <p id="text2"></p>
+
+            <button id="next2" onclick="three()" style="display:none;">
+                الدرس التالي
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="page" id="page5">
+
+        <button class="back" onclick="back()"> رجوع</button>
+
+        <div class="container1">
+
+            <h1>الدرس الثالث 🔢</h1>
+
+            <p>هيا نتعلم ترتيب الأرقام.</p>
+
+            <div class="big">
+                1️⃣ 2️⃣ 3️⃣
+            </div>
+
+            <h2>ما الرقم الذي يأتي بعد 3؟</h2>
+
+            <div class="buttons">
+
+                <button onclick="check3(2)">2</button>
+                <button onclick="check3(4)">4</button>
+                <button onclick="check3(5)">5</button>
+
+            </div>
+
+            <p id="text3"></p>
+
+            <button id="next3" onclick="home2()" style="display:none;">
+                المستوى التالي
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="page" id="page6">
+
+        <button class="back" onclick="back()"> رجوع</button>
+
+        <div class="container1">
+
+            <h1>🐟 الجمع</h1>
+
+            <div class="small">
+
+                <h2>الدرس الأول</h2>
+
+                <p>هيا نتعلم الجمع باستخدام الصور.</p>
+
+                <div class="big">
+                    🐟 + 🐟
+                </div>
+
+                <button onclick="four()">ابدأ</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="page" id="page7">
+
+        <button class="back" onclick="back()"> رجوع</button>
+
+        <div class="container1">
+
+            <h1>الدرس الأول 🐟</h1>
+
+            <p>1 + 1 = ؟</p>
+
+            <div class="big">
+                🐟 + 🐟
+            </div>
+
+            <div class="buttons">
+
+                <button onclick="check4(1)">1</button>
+                <button onclick="check4(2)">2</button>
+                <button onclick="check4(3)">3</button>
+
+            </div>
+
+            <p id="text4"></p>
+
+            <button id="next4" onclick="five()" style="display:none;">
+                الدرس التالي
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="page" id="page8">
+
+        <button class="back" onclick="back()"> رجوع</button>
+
+        <div class="container1">
+
+            <h1>الدرس الثاني 🐟</h1>
+
+            <p>2 + 1 = ؟</p>
+
+            <div class="big">
+                🐟 🐟 + 🐟
+            </div>
+
+            <div class="buttons">
+
+                <button onclick="check5(2)">2</button>
+                <button onclick="check5(3)">3</button>
+                <button onclick="check5(4)">4</button>
+
+            </div>
+
+            <p id="text5"></p>
+
+            <button id="next5" onclick="six()" style="display:none;">
+                الدرس التالي
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="page" id="page9">
+
+        <button class="back" onclick="back()"> رجوع</button>
+
+        <div class="container1">
+
+            <h1>الدرس الثالث 🐟</h1>
+
+            <p>3 + 1 = ؟</p>
+
+            <div class="big">
+                🐟 🐟 🐟 + 🐟
+            </div>
+
+            <div class="buttons">
+
+                <button onclick="check6(3)">3</button>
+                <button onclick="check6(4)">4</button>
+                <button onclick="check6(5)">5</button>
+
+            </div>
+
+            <p id="text6"></p>
+
+            <button id="next6" onclick="home3()" style="display:none;">
+                المستوى التالي
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="page" id="page10">
+
+        <button class="back" onclick="back()"> رجوع</button>
+
+        <div class="container1">
+
+            <h1>🎈 الطرح</h1>
+
+            <div class="small">
+
+                <h2>الدرس الأول</h2>
+
+                <p>هيا نتعلم الطرح باستخدام الصور.</p>
+
+                <div class="big">
+                    🎈 🎈 - 🎈
+                </div>
+
+                <button onclick="seven()">ابدأ</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="page" id="page11">
+
+        <button class="back" onclick="back()"> رجوع</button>
+
+        <div class="container1">
+
+            <h1>الدرس الأول 🎈</h1>
+
+            <p>2 - 1 = ؟</p>
+
+            <div class="buttons">
+
+                <button onclick="check7(1)">1</button>
+                <button onclick="check7(2)">2</button>
+                <button onclick="check7(3)">3</button>
+
+            </div>
+
+            <p id="text7"></p>
+
+            <button id="next7" onclick="eight()" style="display:none;">
+                الدرس التالي
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="page" id="page12">
+
+        <button class="back" onclick="back()"> رجوع</button>
+
+        <div class="container1">
+
+            <h1>الدرس الثاني 🎈</h1>
+
+            <p>3 - 1 = ؟</p>
+
+            <div class="buttons">
+
+                <button onclick="check8(1)">1</button>
+                <button onclick="check8(2)">2</button>
+                <button onclick="check8(3)">3</button>
+
+            </div>
+
+            <p id="text8"></p>
+
+            <button id="next8" onclick="nine()" style="display:none;">
+                الدرس التالي
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="page" id="page13">
+
+        <button class="back" onclick="back()"> رجوع</button>
+
+        <div class="container1">
+
+            <h1>الدرس الثالث 🎈</h1>
+
+            <p>4 - 1 = ؟</p>
+
+            <div class="buttons">
+
+                <button onclick="check9(2)">2</button>
+                <button onclick="check9(3)">3</button>
+                <button onclick="check9(4)">4</button>
+
+            </div>
+
+            <p id="text9"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    <script src="JS/math.js"></script>
+
+     </body>
+    </html>

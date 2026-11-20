@@ -1,0 +1,140 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.first-header {
+    background-color: rgba(135, 190, 220, 0.95);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.header-logo {
+    font-size: 28px;
+    color: #244765;
+}
+
+.ul12 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.ul12 li {
+    position: relative;
+}
+
+.ul12 li a {
+    display: block;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: #244765;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.ul12 li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4px;
+    background-color: #4999cd;
+    bottom: 0;
+    right: 0;
+    transition: 0.3s;
+}
+
+.ul12 li:hover::after {
+    width: 100%;
+}
+
+.ul12 li:hover {
+    background-color: rgba(117, 190, 235, 0.3);
+}
+
+
+.parent {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.content {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content .span1 {
+    color: black;
+    font-size: 50px;
+    display: inline-block;
+}
+
+.content p {
+    color: #d9f9cd;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    text-align: center;
+    width: 150px;
+    min-height: 40px;
+    border-radius: 30px;
+    color: #1ee1ff;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.btn:hover {
+    background-color: rgba(158, 114, 114, 0.5);
+    transition: 1.5s;
+}
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+

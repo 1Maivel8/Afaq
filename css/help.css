@@ -1,0 +1,362 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f8fd;
+    color: #244765;
+}
+
+.first-header {
+    background-color: rgba(173, 216, 230, 0.97);
+    width: 100%;
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.header-logo {
+    font-size: 28px;
+    color: #244765;
+}
+
+.ul12 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.ul12 li {
+    position: relative;
+}
+
+.ul12 li a {
+    display: block;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: #244765;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.ul12 li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4px;
+    background-color: #4999cd;
+    bottom: 0;
+    right: 0;
+    transition: 0.3s;
+}
+
+.ul12 li:hover::after {
+    width: 100%;
+}
+
+.ul12 li:hover {
+    background-color: rgba(117, 190, 235, 0.3);
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f3faff, #dceefa, #eef7ff);
+    color: #244765;
+    text-align: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.div1 {
+    padding: 45px 20px 25px;
+}
+
+.div1 h1 {
+    font-size: 38px;
+    margin: 20px 0 12px;
+    color: #244765;
+}
+
+.div1 p {
+    color: #607d8b;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.div2 {
+    width: 700px;
+    height: 620px;
+    margin: 10px auto 35px;
+    position: relative;
+}
+
+.div6 {
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    top: 180px;
+    left: 220px;
+    background: linear-gradient(145deg, #58afd0, #2679b8);
+    border: 7px solid rgba(255,255,255,0.75);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    box-shadow: 0 15px 40px rgba(36,71,101,0.22);
+    z-index: 2;
+}
+
+.div6 h2 {
+    font-size: 35px;
+    margin: 0 0 8px;
+}
+
+.div6 h1 {
+    font-size: 26px;
+    margin: 0 0 12px;
+}
+
+.div6 p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.div3,.div4,.div5,.div7,.div8,.div9 {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    background: rgba(255,255,255,0.94);
+    border: 2px solid #ffffff;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(36,71,101,0.10);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    z-index: 3;
+}
+
+.div3 h2,.div4 h2,.div5 h2,.div7 h2,.div8 h2,.div9 h2 {
+    font-size: 34px;
+    margin: 0 0 10px;
+}
+
+.div3 p,.div4 p,.div5 p,.div7 p,.div8 p,.div9 p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #315b79;
+    margin: 0;
+}
+
+.div3 {
+    top: 10px;
+    left: 280px;
+}
+
+.div4 {
+    top: 145px;
+    left: 35px;
+}
+
+.div5 {
+    top: 145px;
+    right: 35px;
+}
+
+.div7 {
+    bottom: 130px;
+    left: 35px;
+}
+
+.div8 {
+    bottom: 130px;
+    right: 35px;
+}
+
+.div9 {
+    bottom: 0;
+    left: 280px;
+}
+
+.div3:hover,.div4:hover,.div5:hover,.div7:hover,.div8:hover,.div9:hover {
+    transform: translateY(-7px);
+    background: #ffffff;
+    box-shadow: 0 15px 32px rgba(38,121,184,0.20);
+    border-color: #b9dff5;
+}
+
+.line1,.line2,.line3,.line4,.line5,.line6 {
+    position: absolute;
+    height: 4px;
+    background: #a8d5ed;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.line1 {
+    width: 85px;
+    top: 185px;
+    left: 307px;
+    transform: rotate(90deg);
+}
+
+.line2 {
+    width: 150px;
+    top: 270px;
+    left: 125px;
+    transform: rotate(28deg);
+}
+
+.line3 {
+    width: 150px;
+    top: 270px;
+    right: 125px;
+    transform: rotate(-28deg);
+}
+
+.line4 {
+    width: 150px;
+    bottom: 220px;
+    left: 125px;
+    transform: rotate(-28deg);
+}
+
+.line5 {
+    width: 150px;
+    bottom: 220px;
+    right: 125px;
+    transform: rotate(28deg);
+}
+
+.line6 {
+    width: 85px;
+    bottom: 130px;
+    left: 307px;
+    transform: rotate(90deg);
+}
+
+.div10 {
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto 55px;
+    padding: 45px 25px;
+    background: rgba(255,255,255,0.85);
+    border: 1px solid #ffffff;
+    border-radius: 28px;
+    box-shadow: 0 12px 35px rgba(36,71,101,0.10);
+}
+
+.div10 h1 {
+    color: #244765;
+    font-size: 30px;
+    margin: 0 0 15px;
+}
+
+.div10 p {
+    color: #607d8b;
+    font-size: 17px;
+    line-height: 1.9;
+    margin: 0 auto 25px;
+}
+
+.div10 button {
+    background: linear-gradient(135deg, #398fc1, #2679b8);
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 7px 18px rgba(38,121,184,0.18);
+    transition: 0.3s;
+}
+
+.div10 button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 11px 24px rgba(38,121,184,0.25);
+}
+
+.help-overlay {
+    width: 100%;
+    background-color: #bbd6ec;
+    padding: 55px 10%;
+    text-align: center;
+}
+
+.header1 {
+    font-size: 25px;
+    color: #244765;
+    margin-bottom: 30px;
+}
+
+.help-content h2 {
+    color: #357eaf;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.help-content p {
+    color: #526b7c;
+    font-size: 18px;
+    line-height: 2;
+    margin-top: 12px;
+}
+
+@media (max-width: 750px) {
+    .div1 {
+        padding-top: 30px;
+    }
+
+    .div1 h1 {
+        font-size: 29px;
+    }
+
+    .div1 p {
+        font-size: 16px;
+    }
+
+    .div2 {
+        margin-left: 50%;
+        transform: translateX(-50%) scale(0.68);
+        transform-origin: top center;
+        margin-bottom: -170px;
+    }
+
+    .div10 {
+        width: 92%;
+        padding: 30px 18px;
+    }
+
+    .div10 h1 {
+        font-size: 25px;
+    }
+
+    .div10 p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 380px) {
+    .div2 {
+        transform: translateX(-50%) scale(0.52);
+        margin-bottom: -260px;
+    }
+}
